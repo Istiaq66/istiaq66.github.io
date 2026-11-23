@@ -23,7 +23,11 @@ Static site for GitHub Pages at **https://istiaq66.github.io/**.
 - Adding analytics (e.g. Firebase), accounts or in-app purchases changes
   what data is collected. **Update `privacy.html`** (and its effective date)
   in the same release.
-- When the game is live, replace "Coming soon on Google Play" with the
-  Play Store link.
+- The "Get it on Google Play" badges link to
+  `https://play.google.com/store/apps/details?id=com.istech.hexstacksort`.
+  That page only works once the game is in **production**. On launch day,
+  delete the `<span class="store-note">Launching soon...</span>` lines in
+  `index.html` and `hex-stack-sort/index.html`, and the "coming soon" line
+  in `index.html`.
 - AdMob → Apps → app-ads.txt: add `https://istiaq66.github.io` as the
   developer website in Play Console so AdMob can verify `app-ads.txt`.
