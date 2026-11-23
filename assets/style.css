@@ -1,0 +1,73 @@
+:root {
+  --bg-top: #30246a;
+  --bg-bottom: #130e29;
+  --surface: #2a2152;
+  --surface-high: #372c6b;
+  --outline: rgba(255, 255, 255, 0.15);
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --primary: #8c6cff;
+  --primary-bright: #b9a6ff;
+  --pink: #ff6fb5;
+  --gold: #ffd24d;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg-top), var(--bg-bottom)) fixed;
+  background-color: var(--bg-bottom);
+}
+
+a { color: var(--primary-bright); }
+a:hover { color: var(--pink); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+
+header.site {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 32px;
+}
+header.site a { color: var(--text); text-decoration: none; font-weight: 800; font-size: 1.2rem; }
+.logo-mark {
+  width: 36px; height: 36px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary), var(--pink));
+}
+
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 1.25rem; margin: 32px 0 8px; }
+h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+p, li { color: var(--muted); }
+strong { color: var(--text); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.game {
+  display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+}
+.game img { width: 96px; height: 96px; border-radius: 22px; }
+.game .info { flex: 1 1 240px; }
+.game h2 { margin-top: 0; }
+
+.pill {
+  display: inline-block; padding: 10px 18px; border-radius: 999px;
+  font-weight: 800; text-decoration: none; color: #fff;
+  background: linear-gradient(90deg, var(--primary), var(--pink));
+}
+.pill.secondary { background: var(--surface-high); }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.meta { font-size: 0.9rem; color: var(--muted); }
+
+footer { margin-top: 48px; font-size: 0.85rem; color: var(--muted); }
