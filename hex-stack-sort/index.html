@@ -5,46 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hex Stack Sort</title>
   <meta name="description" content="Hex Stack Sort: stack, merge and sort hex tiles in a relaxing puzzle game by IS-Tech.">
+  <meta name="theme-color" content="#30246a">
   <link rel="icon" href="../assets/hex-stack-sort-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
-      <span class="logo-mark" aria-hidden="true"></span>
-      <a href="/">IS-Tech</a>
-    </header>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img src="../assets/istech-mark.svg" alt="">
+        <span class="wordmark"><span class="is">IS-</span><span class="tech">TECH</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#trailer">Trailer</a>
+        <a class="wide-only" href="#how">How to play</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="card game">
-      <img src="../assets/hex-stack-sort-icon.png" alt="Hex Stack Sort app icon">
-      <div class="info">
-        <h1>Hex Stack Sort</h1>
-        <p>A relaxing hex-tile puzzle. Stack, merge and sort.</p>
-        <p class="meta">Coming soon on Google Play</p>
+  <main>
+    <div class="game-hero">
+      <div class="wrap">
+        <img class="app-icon" src="../assets/hex-stack-sort-icon.png" alt="Hex Stack Sort app icon" width="112" height="112">
+        <div>
+          <h1>Hex Stack Sort</h1>
+          <p>Stack. Merge. Clear! A relaxing hex-tile puzzle.</p>
+          <span class="badge"><span class="dot"></span>Coming soon on Google Play</span>
+        </div>
       </div>
     </div>
 
-    <h2>How to play</h2>
-    <ul>
-      <li>Pick a stack from the tray and place it on an empty hex.</li>
-      <li>Neighboring stacks with the same top color slide together.</li>
-      <li>Get 10 or more of one color on top to clear them.</li>
-      <li>Fill the progress bar to win the level, and don't let the board fill up.</li>
-    </ul>
+    <section id="trailer">
+      <div class="wrap">
+        <h2 class="section-title" style="text-align:center">Watch it in action</h2>
+        <p class="section-sub" style="text-align:center">A quick look at merging stacks and clearing the board.</p>
+        <div class="trailer">
+          <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/-WKUBjSC1A4?rel=0&amp;modestbranding=1&amp;playsinline=1"
+                    title="Hex Stack Sort gameplay video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Features</h2>
-    <ul>
-      <li>Endless levels with new colors and board shapes as you go</li>
-      <li>A guided tutorial to learn the basics in seconds</li>
-      <li>Daily rewards, 12 achievements and coin rewards</li>
-      <li>Play offline, with no account needed</li>
-    </ul>
+    <section id="screens">
+      <div class="wrap">
+        <h2 class="section-title">Screenshots</h2>
+        <p class="section-sub">Swipe to see more.</p>
+        <div class="shots">
+          <img src="../assets/shots/01-gameplay.webp" alt="Gameplay on a ring-shaped board" loading="lazy" width="540" height="960">
+          <img src="../assets/shots/02-clear.webp" alt="Clearing 10 tiles of one color" loading="lazy" width="540" height="960">
+          <img src="../assets/shots/03-tutorial.webp" alt="Guided tutorial" loading="lazy" width="540" height="960">
+          <img src="../assets/shots/04-daily.webp" alt="Daily rewards" loading="lazy" width="540" height="960">
+          <img src="../assets/shots/05-achievements.webp" alt="Achievements" loading="lazy" width="540" height="960">
+          <img src="../assets/shots/06-home.webp" alt="Home screen" loading="lazy" width="540" height="960">
+        </div>
+      </div>
+    </section>
 
-    <h2>Support</h2>
-    <p>Found a bug or have an idea? Email <a href="mailto:istiaq.ahmed@gtaf.org">istiaq.ahmed@gtaf.org</a>.</p>
-    <p><a href="privacy.html">Privacy policy</a></p>
+    <section id="how">
+      <div class="wrap narrow">
+        <h2 class="section-title">How to play</h2>
+        <p class="section-sub">Easy to learn, hard to put down.</p>
+        <ol class="steps">
+          <li>Pick a stack from the tray and place it on an empty hex.</li>
+          <li>Neighboring stacks with the same top color slide together.</li>
+          <li>Get 10 or more of one color on top to clear them.</li>
+          <li>Fill the progress bar to win, and don't let the board fill up!</li>
+        </ol>
+      </div>
+    </section>
 
-    <footer>&copy; 2026 IS-Tech</footer>
-  </div>
+    <section id="features">
+      <div class="wrap">
+        <h2 class="section-title">Features</h2>
+        <p class="section-sub">Everything you need for a quick, satisfying break.</p>
+        <div class="grid">
+          <div class="card tile"><div class="ico">&#11042;</div><h4>Endless levels</h4><p>New colors, board shapes and stones as you go.</p></div>
+          <div class="card tile"><div class="ico">&#127891;</div><h4>Guided tutorial</h4><p>Learn the basics in seconds.</p></div>
+          <div class="card tile"><div class="ico">&#127873;</div><h4>Daily rewards</h4><p>Build a 7-day streak for up to 150 coins.</p></div>
+          <div class="card tile"><div class="ico">&#127942;</div><h4>12 achievements</h4><p>Each one pays coins when you unlock it.</p></div>
+          <div class="card tile"><div class="ico">&#127925;</div><h4>Satisfying feel</h4><p>Merge animations, sound, music and vibration.</p></div>
+          <div class="card tile"><div class="ico">&#128245;</div><h4>Play offline</h4><p>No account needed. Play anytime.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="support">
+      <div class="wrap narrow">
+        <div class="card tile">
+          <div class="ico">&#9993;</div>
+          <h4>Support</h4>
+          <p>Found a bug or have an idea? Email <a href="mailto:istiaq.ahmed@gtaf.org">istiaq.ahmed@gtaf.org</a>.
+            Read our <a href="privacy.html">privacy policy</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 IS-Tech</span>
+      <nav aria-label="Footer">
+        <a href="/">IS-Tech home</a>
+        <a href="privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </footer>
 </body>
 </html>

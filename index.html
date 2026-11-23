@@ -4,38 +4,81 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>IS-Tech Games</title>
-  <meta name="description" content="Casual mobile games by IS-Tech.">
-  <link rel="icon" href="assets/hex-stack-sort-icon.png">
+  <meta name="description" content="IS-Tech makes simple, colorful mobile puzzle games. Meet Hex Stack Sort.">
+  <meta name="theme-color" content="#0a1f44">
+  <link rel="icon" href="assets/istech-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
-      <span class="logo-mark" aria-hidden="true"></span>
-      <a href="/">IS-Tech</a>
-    </header>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/">
+        <img src="assets/istech-mark.svg" alt="">
+        <span class="wordmark"><span class="is">IS-</span><span class="tech">TECH</span></span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Casual games for quick, relaxing breaks</h1>
-    <p>IS-Tech makes simple, colorful puzzle games for Android.</p>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <img class="logo-big" src="assets/istech-mark.svg" alt="IS-Tech logo">
+        <h1>Small games,<br><span class="accent">big smiles.</span></h1>
+        <p>IS-Tech makes simple, colorful puzzle games for Android, built for quick and relaxing breaks.</p>
+      </div>
+    </section>
 
-    <h2>Our games</h2>
-    <div class="card game">
-      <img src="assets/hex-stack-sort-icon.png" alt="Hex Stack Sort app icon">
-      <div class="info">
-        <h2>Hex Stack Sort</h2>
-        <p>Stack, merge and sort hex tiles. Put 10 of one color on top of a stack to clear it, and don't let the board fill up.</p>
-        <p class="meta">Coming soon on Google Play</p>
-        <div class="actions">
-          <a class="pill" href="hex-stack-sort/">About the game</a>
-          <a class="pill secondary" href="hex-stack-sort/privacy.html">Privacy policy</a>
+    <section id="games">
+      <div class="wrap">
+        <h2 class="section-title">Our games</h2>
+        <p class="section-sub">Our latest release, coming soon to Google Play.</p>
+
+        <article class="card game-feature">
+          <a href="hex-stack-sort/"><img class="banner" src="assets/hex-stack-sort-banner.webp" alt="Hex Stack Sort: Stack. Merge. Clear!" width="1024" height="500"></a>
+          <div class="body">
+            <img class="app-icon" src="assets/hex-stack-sort-icon.png" alt="Hex Stack Sort app icon" width="84" height="84">
+            <div class="info">
+              <h3>Hex Stack Sort</h3>
+              <p>Stack, merge and sort hex tiles. Put 10 of one color on top of a stack to clear it, and don't let the board fill up.</p>
+              <span class="badge"><span class="dot"></span>Coming soon on Google Play</span>
+            </div>
+          </div>
+          <div class="body" style="padding-top:0">
+            <div class="actions" style="margin-top:0">
+              <a class="btn game" href="hex-stack-sort/">&#9654; Watch the trailer</a>
+              <a class="btn secondary" href="hex-stack-sort/privacy.html">Privacy policy</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="card tile">
+          <div class="ico">&#9993;</div>
+          <h4>Get in touch</h4>
+          <p>Questions, feedback or bug reports: <a href="mailto:istiaq.ahmed@gtaf.org">istiaq.ahmed@gtaf.org</a></p>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 IS-Tech</span>
+      <nav aria-label="Footer">
+        <a href="hex-stack-sort/">Hex Stack Sort</a>
+        <a href="hex-stack-sort/privacy.html">Privacy policy</a>
+      </nav>
     </div>
-
-    <h2>Contact</h2>
-    <p>Questions or feedback: <a href="mailto:istiaq.ahmed@gtaf.org">istiaq.ahmed@gtaf.org</a></p>
-
-    <footer>&copy; 2026 IS-Tech</footer>
-  </div>
+  </footer>
 </body>
 </html>
